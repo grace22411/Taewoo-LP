@@ -1,0 +1,8 @@
+Headers: 30px
+NAV Links: 15px
+Buttons: 20px
+Body Text: 20px
+
+Font is POPPINS
+
+Red Color: #c1001c

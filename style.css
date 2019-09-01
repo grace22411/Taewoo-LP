@@ -1,0 +1,993 @@
+/* line 3, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; }
+
+/* line 12, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+#mybutton {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999; }
+  /* line 17, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  #mybutton .feedback {
+    background-color: #c1001c;
+    color: white;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    border-color: #46b8da; }
+    /* line 27, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    #mybutton .feedback i {
+      padding-top: 10px; }
+  @media only screen and (max-width: 420px) {
+    /* line 12, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    #mybutton {
+      right: 15px;
+      bottom: 13px; }
+      /* line 34, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      #mybutton .feedback {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px; }
+        /* line 38, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        #mybutton .feedback i {
+          padding-top: 5px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 12, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    #mybutton {
+      right: 20px;
+      bottom: 16px; } }
+
+/* line 52, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.modal_content {
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: none;
+  width: 100%;
+  float: right;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  z-index: 9999;
+  animation: scale_in 0.2s linear 1; }
+  /* line 64, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .modal_content .close {
+    color: #c1001c !important;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin: 15px 15px 0 0; }
+  /* line 71, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .modal_content ul {
+    text-align: center;
+    color: #f2f2f2;
+    margin: auto;
+    margin: 100px auto 0 auto;
+    width: 22%;
+    height: 70px; }
+    /* line 79, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .modal_content ul a {
+      text-decoration: none; }
+    /* line 82, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .modal_content ul li {
+      list-style-type: none;
+      font-size: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      text-align: center;
+      transition: .2s ease-in-out;
+      margin-left: 0px;
+      padding-top: 10px;
+      padding-left: 0;
+      display: list-item; }
+  /* line 97, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .modal_content li:hover {
+    color: #c1001c;
+    text-decoration: none; }
+  @media screen and (max-width: 420px) {
+    /* line 52, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .modal_content {
+      width: 100%; }
+      /* line 103, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .modal_content ul {
+        width: 70%; }
+        /* line 105, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .modal_content ul li {
+          font-size: 25px;
+          width: 100%; } }
+  @media only screen and (min-width: 421px) and (max-width: 768px) {
+    /* line 52, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .modal_content {
+      width: 100%; }
+      /* line 114, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .modal_content ul {
+        width: 70%; }
+        /* line 116, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .modal_content ul li {
+          font-size: 25px;
+          width: 100%; } }
+
+/* line 124, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.row, .container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+/* line 130, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.navbar {
+  padding: 25px 180px;
+  height: 100px;
+  z-index: 9999;
+  width: 100%;
+  background-color: #fff; }
+  /* line 137, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .navbar a {
+    float: left; }
+    /* line 139, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar a img {
+      width: 170px;
+      height: 45px;
+      float: left; }
+  /* line 144, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .navbar .nav {
+    float: right !important; }
+    /* line 146, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar .nav li {
+      padding-left: 25px; }
+      /* line 149, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar .nav li a {
+        color: #333;
+        font-weight: 600;
+        font-size: 15px;
+        transition: .2s ease-in-out; }
+      /* line 155, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar .nav li a:hover {
+        color: #c1001c; }
+  /* line 161, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .navbar .navbar_contain {
+    width: 55px;
+    display: none;
+    height: 50px;
+    float: right !important;
+    margin-top: 40px;
+    cursor: pointer; }
+    /* line 168, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar .navbar_contain .navbar_1, .navbar .navbar_contain .navbar_2, .navbar .navbar_contain .navbar_3 {
+      width: 25px;
+      height: 2px;
+      margin: auto;
+      background-color: #000; }
+    /* line 174, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar .navbar_contain .navbar_2, .navbar .navbar_contain .navbar_3 {
+      margin-top: 5px; }
+  @media only screen and (max-width: 420px) {
+    /* line 130, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar {
+      padding: 0 30px;
+      height: 90px; }
+      /* line 186, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar li {
+        display: none; }
+      /* line 189, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar .navbar_contain {
+        display: block;
+        margin-right: -125px; }
+      /* line 193, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar a {
+        float: left; }
+        /* line 195, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .navbar a img {
+          width: 120px;
+          height: 30px;
+          float: left; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 130, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar {
+      padding: 0 50px;
+      height: 90px; }
+      /* line 204, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar li {
+        display: none; }
+      /* line 207, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar .navbar_contain {
+        display: block;
+        margin-right: -325px; }
+      /* line 211, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar a {
+        float: left; }
+        /* line 213, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .navbar a img {
+          width: 150px;
+          height: 40px;
+          float: left; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 130, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .navbar {
+      padding: 0 100px;
+      height: 100px; }
+      /* line 223, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar li {
+        display: none; }
+      /* line 226, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar .navbar_contain {
+        display: block;
+        margin-right: -400px; }
+      /* line 230, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .navbar a {
+        float: left; }
+        /* line 232, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .navbar a img {
+          width: 150px;
+          height: 40px;
+          float: left; } }
+
+/* line 239, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.banner, .banner2, .core, .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/build-builder-carry-585419.jpg);
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 600px;
+  background-position: center;
+  padding-top: 250px; }
+  /* line 249, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .banner .mx-auto, .banner2 .mx-auto, .core .mx-auto, .banner_1 .mx-auto, .serve .mx-auto, .serve2 .mx-auto, .serve3 .mx-auto, .serve4 .mx-auto, .banner-service .mx-auto {
+    width: 250px;
+    text-align: center;
+    height: auto; }
+    /* line 254, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner .mx-auto button, .banner2 .mx-auto button, .core .mx-auto button, .banner_1 .mx-auto button, .serve .mx-auto button, .serve2 .mx-auto button, .serve3 .mx-auto button, .serve4 .mx-auto button, .banner-service .mx-auto button {
+      width: 240px;
+      height: 75px;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 18px;
+      background-color: transparent;
+      font-weight: 400;
+      transition: .2s ease-in; }
+    /* line 264, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner .mx-auto button:hover, .banner2 .mx-auto button:hover, .core .mx-auto button:hover, .banner_1 .mx-auto button:hover, .serve .mx-auto button:hover, .serve2 .mx-auto button:hover, .serve3 .mx-auto button:hover, .serve4 .mx-auto button:hover, .banner-service .mx-auto button:hover {
+      background-color: #c1001c;
+      color: #fff;
+      border: none;
+      font-weight: 400; }
+    /* line 270, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner .mx-auto .dot, .banner2 .mx-auto .dot, .core .mx-auto .dot, .banner_1 .mx-auto .dot, .serve .mx-auto .dot, .serve2 .mx-auto .dot, .serve3 .mx-auto .dot, .serve4 .mx-auto .dot, .banner-service .mx-auto .dot {
+      width: 20px;
+      margin: 135px auto;
+      height: 30px;
+      cursor: pointer;
+      border: 2px solid #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      animation: bounce 3s linear infinite; }
+      /* line 281, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner .mx-auto .dot .dotted, .banner2 .mx-auto .dot .dotted, .core .mx-auto .dot .dotted, .banner_1 .mx-auto .dot .dotted, .serve .mx-auto .dot .dotted, .serve2 .mx-auto .dot .dotted, .serve3 .mx-auto .dot .dotted, .serve4 .mx-auto .dot .dotted, .banner-service .mx-auto .dot .dotted {
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: #fff;
+        margin: 12px auto; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  40% {
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px); }
+  60% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px); } }
+  @media only screen and (max-width: 420px) {
+    /* line 239, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner, .banner2, .core, .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+      height: 400px;
+      padding-top: 170px; }
+      /* line 312, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner .mx-auto .dot, .banner2 .mx-auto .dot, .core .mx-auto .dot, .banner_1 .mx-auto .dot, .serve .mx-auto .dot, .serve2 .mx-auto .dot, .serve3 .mx-auto .dot, .serve4 .mx-auto .dot, .banner-service .mx-auto .dot {
+        margin-top: 80px; }
+      /* line 315, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner .mx-auto button, .banner2 .mx-auto button, .core .mx-auto button, .banner_1 .mx-auto button, .serve .mx-auto button, .serve2 .mx-auto button, .serve3 .mx-auto button, .serve4 .mx-auto button, .banner-service .mx-auto button {
+        width: 200px;
+        height: 50px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 239, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner, .banner2, .core, .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+      padding-top: 200px;
+      height: 500px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 239, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner, .banner2, .core, .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+      height: 550px; } }
+
+/* line 331, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.middle, .middle2 {
+  background-color: #c1001c;
+  color: #fff;
+  height: 350px;
+  padding: 100px 0;
+  text-align: center; }
+  /* line 337, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .middle h2, .middle2 h2 {
+    font-weight: 700;
+    font-size: 30px; }
+  /* line 341, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .middle p, .middle2 p {
+    font-size: 20px;
+    font-weight: 300; }
+  /* line 345, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .middle button, .middle2 button {
+    width: 230px;
+    height: 75px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: transparent;
+    font-weight: 400;
+    transition: .2s ease-in; }
+  /* line 356, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .middle button:hover, .middle2 button:hover {
+    background-color: #fff;
+    color: #c1001c;
+    border: none;
+    font-weight: 500; }
+  @media only screen and (max-width: 420px) {
+    /* line 331, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .middle, .middle2 {
+      padding: 50px 20px;
+      height: 320px; }
+      /* line 365, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle h2, .middle2 h2 {
+        font-size: 25px; }
+      /* line 368, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle button, .middle2 button {
+        height: 50px;
+        font-size: 15px;
+        width: 200px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 331, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .middle, .middle2 {
+      padding: 50px 30px;
+      height: 300px; }
+      /* line 378, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle h2, .middle2 h2 {
+        font-size: 25px; }
+      /* line 381, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle button, .middle2 button {
+        height: 60px;
+        font-size: 17px;
+        width: 200px; } }
+
+/* line 389, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.banner2, .core {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/builders-building-construction-159306.jpg); }
+
+/* line 394, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.middle2 {
+  height: 320px; }
+  /* line 397, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .middle2 h2 {
+    font-weight: 600; }
+  @media only screen and (max-width: 420px) {
+    /* line 394, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .middle2 {
+      padding: 50px 30px;
+      height: 250px; }
+      /* line 403, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle2 h2 {
+        font-size: 22px; }
+      /* line 406, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle2 button {
+        height: 50px;
+        font-size: 15px; } }
+  @media only screen and (min-width: 421px) and (max-width: 768px) {
+    /* line 394, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .middle2 {
+      padding: 50px 50px;
+      height: 220px; }
+      /* line 415, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle2 h2 {
+        font-size: 22px; }
+      /* line 418, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .middle2 button {
+        height: 60px;
+        font-size: 17px; } }
+
+/* line 427, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+  height: 600px; }
+  /* line 430, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .banner_1 .mx-auto, .serve .mx-auto, .serve2 .mx-auto, .serve3 .mx-auto, .serve4 .mx-auto, .banner-service .mx-auto {
+    width: 70%;
+    text-align: center;
+    height: auto;
+    color: #fff; }
+    /* line 435, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner_1 .mx-auto h2, .serve .mx-auto h2, .serve2 .mx-auto h2, .serve3 .mx-auto h2, .serve4 .mx-auto h2, .banner-service .mx-auto h2 {
+      font-weight: 700;
+      font-size: 25px; }
+    /* line 439, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner_1 .mx-auto p, .serve .mx-auto p, .serve2 .mx-auto p, .serve3 .mx-auto p, .serve4 .mx-auto p, .banner-service .mx-auto p {
+      font-size: 25px;
+      font-weight: 300; }
+  @media only screen and (max-width: 420px) {
+    /* line 427, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+      height: 400px;
+      padding-top: 120px; }
+      /* line 448, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner_1 .mx-auto h2, .serve .mx-auto h2, .serve2 .mx-auto h2, .serve3 .mx-auto h2, .serve4 .mx-auto h2, .banner-service .mx-auto h2 {
+        font-size: 22px; }
+      /* line 451, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner_1 .mx-auto p, .serve .mx-auto p, .serve2 .mx-auto p, .serve3 .mx-auto p, .serve4 .mx-auto p, .banner-service .mx-auto p {
+        font-size: 15px; }
+      /* line 454, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .banner_1 .mx-auto button, .serve .mx-auto button, .serve2 .mx-auto button, .serve3 .mx-auto button, .serve4 .mx-auto button, .banner-service .mx-auto button {
+        height: 50px;
+        font-size: 15px;
+        width: 200px;
+        margin-top: 5px; } }
+  @media only screen and (min-width: 421px) and (max-width: 768px) {
+    /* line 427, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner_1, .serve, .serve2, .serve3, .serve4, .banner-service {
+      padding-top: 150px;
+      height: 500px; } }
+
+/* line 469, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.mission {
+  padding: 30px 0 60px 0; }
+  /* line 471, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .mission .col-md-7 {
+    text-align: center;
+    margin-top: 60px; }
+    /* line 474, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .mission .col-md-7 h2 {
+      color: #c1001c;
+      font-size: 30px;
+      margin-bottom: 22px;
+      font-weight: 700; }
+    /* line 481, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .mission .col-md-7 p {
+      font-size: 25px;
+      font-weight: 400; }
+  @media only screen and (max-width: 420px) {
+    /* line 469, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .mission {
+      padding: 20px 0 40px 0; }
+      /* line 488, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .mission .col-md-7 {
+        margin-top: 30px; }
+        /* line 490, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .mission .col-md-7 h2 {
+          font-size: 20px;
+          margin-bottom: 10px; }
+        /* line 494, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .mission .col-md-7 p {
+          font-size: 14px;
+          padding: 0 20px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 469, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .mission {
+      padding: 20px 30px 40px 30px; }
+      /* line 506, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .mission .col-md-7 h2 {
+        font-size: 20px; }
+      /* line 509, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .mission .col-md-7 p {
+        font-size: 15px;
+        padding: 0 20px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 519, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .mission .col-md-7 {
+      padding: 0; } }
+
+/* line 525, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.core {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/active-adults-bars-583392.jpg);
+  background-position: top; }
+
+/* line 530, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.team, .gallery {
+  padding: 70px 0; }
+  /* line 532, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .team h2, .gallery h2 {
+    color: #c1001c;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center; }
+  /* line 538, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .team .row, .gallery .row {
+    padding: 40px 150px; }
+    /* line 541, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team .row .col-md-3 .profile-pic, .gallery .row .col-md-3 .profile-pic {
+      height: 200px;
+      background-size: cover; }
+    /* line 545, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team .row .col-md-3 h3, .gallery .row .col-md-3 h3 {
+      font-weight: 700;
+      color: #c1001c;
+      margin-top: 10px;
+      font-size: 17px;
+      margin-bottom: 0; }
+    /* line 552, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team .row .col-md-3 p, .gallery .row .col-md-3 p {
+      font-weight: 400;
+      font-size: 15px;
+      margin-top: 4px; }
+  @media only screen and (max-width: 420px) {
+    /* line 530, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team, .gallery {
+      padding: 30px 0 40px 0; }
+      /* line 560, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team h2, .gallery h2 {
+        margin-top: 30px; }
+      /* line 563, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team .row, .gallery .row {
+        padding: 20px 15px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 530, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team, .gallery {
+      padding: 30px 0 40px 0; }
+      /* line 571, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team h2, .gallery h2 {
+        margin-top: 40px; }
+      /* line 574, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team .row, .gallery .row {
+        padding: 20px 35px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 530, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .team, .gallery {
+      padding: 30px 0 40px 0; }
+      /* line 581, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team h2, .gallery h2 {
+        margin-top: 40px; }
+      /* line 584, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .team .row, .gallery .row {
+        padding: 40px 85px; }
+        /* line 587, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .team .row .col-md-3 .profile-pic, .gallery .row .col-md-3 .profile-pic {
+          height: 150px;
+          background-size: cover; }
+        /* line 591, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .team .row .col-md-3 h3, .gallery .row .col-md-3 h3 {
+          font-weight: 700;
+          color: #c1001c;
+          margin-top: 10px;
+          font-size: 15px;
+          margin-bottom: 0; }
+        /* line 598, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .team .row .col-md-3 p, .gallery .row .col-md-3 p {
+          font-weight: 400;
+          font-size: 14px;
+          margin-top: 4px; } }
+
+/* line 608, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.serve, .serve2, .serve3, .serve4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/Lightning%20arrestor%20on%20the%20roof-1.jpg);
+  background-position: bottom; }
+  /* line 613, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .serve .mx-auto h2, .serve2 .mx-auto h2, .serve3 .mx-auto h2, .serve4 .mx-auto h2 {
+    font-size: 35px; }
+  @media only screen and (max-width: 420px) {
+    /* line 608, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .serve, .serve2, .serve3, .serve4 {
+      height: 350px; }
+      /* line 620, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .serve .mx-auto h2, .serve2 .mx-auto h2, .serve3 .mx-auto h2, .serve4 .mx-auto h2 {
+        font-size: 30px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 608, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .serve, .serve2, .serve3, .serve4 {
+      height: 500px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 608, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .serve, .serve2, .serve3, .serve4 {
+      height: 550px; } }
+
+/* line 634, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.serve2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aifield.jpeg); }
+
+/* line 639, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.serve3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/15.jpg); }
+
+/* line 643, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.serve4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/2.jpg); }
+
+/* line 650, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.gallery .profile-pic {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px; }
+
+/* line 661, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.banner-service button {
+  margin-top: 15px; }
+
+/* line 665, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.banner-service .mx-auto .dot {
+  margin-top: 100px; }
+
+@media only screen and (max-width: 420px) {
+  /* line 659, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .banner-service {
+    height: 400px;
+    padding-top: 120px; }
+    /* line 673, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner-service .mx-auto h2 {
+      font-size: 20px; }
+    /* line 676, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner-service .mx-auto p {
+      font-size: 15px; }
+    /* line 679, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .banner-service .mx-auto button {
+      height: 50px;
+      font-size: 15px;
+      width: 200px;
+      margin-top: 5px; } }
+
+/* line 692, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.contact {
+  margin-bottom: 80px; }
+  /* line 694, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .contact .row {
+    padding: 20px 150px; }
+    /* line 696, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 40px; }
+    /* line 701, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row h3 {
+      font-weight: 200;
+      font-size: 25px; }
+    /* line 705, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row p {
+      font-size: 20px;
+      margin-top: 20px; }
+    /* line 709, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row input {
+      width: 350px;
+      height: 75px;
+      background-color: #f0f0f0;
+      border: none;
+      padding-left: 20px; }
+    /* line 716, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row ::placeholder {
+      font-size: 17px;
+      color: #888; }
+    /* line 721, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row a button {
+      width: 230px;
+      height: 72px;
+      border: 2px solid #c1001c;
+      color: #c1001c;
+      margin-top: 10px;
+      font-size: 18px;
+      background-color: transparent;
+      font-weight: 400;
+      transition: .2s ease-in; }
+    /* line 732, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row a button:hover {
+      background-color: #c1001c;
+      color: #fff;
+      border: none;
+      font-weight: 500; }
+    /* line 739, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 40px; }
+  @media only screen and (max-width: 420px) {
+    /* line 747, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row {
+      padding: 10px 30px; }
+      /* line 749, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row h2 {
+        font-size: 20px;
+        margin-bottom: 20px; }
+      /* line 753, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row h3 {
+        font-size: 18px; }
+      /* line 756, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row p {
+        font-size: 16px;
+        margin-top: 10px; }
+      /* line 760, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px; }
+      /* line 766, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row a button {
+        height: 45px;
+        font-size: 15px;
+        width: 140px;
+        margin-top: 5px; }
+      /* line 774, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row .col-md-6 {
+        padding: 0; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 781, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row {
+      padding: 20px 50px; }
+      /* line 783, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row h2 {
+        font-size: 20px;
+        margin-bottom: 30px; }
+      /* line 787, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row p {
+        font-size: 15px;
+        margin-top: 10px; }
+      /* line 792, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row a button {
+        height: 60px;
+        font-size: 15px;
+        width: 200px;
+        margin-top: 5px; }
+      /* line 800, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row .col-md-6 {
+        padding: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 807, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .contact .row {
+      padding: 20px 100px; }
+      /* line 809, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row h2 {
+        font-size: 22px;
+        margin-bottom: 30px; }
+      /* line 813, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row p {
+        font-size: 17px;
+        margin-top: 10px; }
+      /* line 818, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row a button {
+        height: 65px;
+        font-size: 15px;
+        width: 200px;
+        margin-top: 5px; }
+      /* line 826, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .contact .row .col-md-6 {
+        padding: 0; } }
+
+/* line 834, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.medium, .extra, .airfield {
+  padding: 50px 180px; }
+  /* line 836, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .medium .col-md-8, .extra .col-md-8, .airfield .col-md-8, .medium .col-md-9, .extra .col-md-9, .airfield .col-md-9 {
+    margin-top: 30px; }
+    /* line 838, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium .col-md-8 p, .extra .col-md-8 p, .airfield .col-md-8 p, .medium .col-md-9 p, .extra .col-md-9 p, .airfield .col-md-9 p {
+      color: #888;
+      font-size: 20px; }
+  @media only screen and (max-width: 420px) {
+    /* line 834, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium, .extra, .airfield {
+      padding: 20px 30px; }
+      /* line 845, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .medium .col-md-8, .extra .col-md-8, .airfield .col-md-8 {
+        padding-left: 0;
+        padding-right: 0; }
+        /* line 848, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        .medium .col-md-8 p, .extra .col-md-8 p, .airfield .col-md-8 p {
+          font-size: 15px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 834, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium, .extra, .airfield {
+      padding: 20px 50px; }
+      /* line 857, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .medium .col-md-8 p, .extra .col-md-8 p, .airfield .col-md-8 p {
+        font-size: 17px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 834, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium, .extra, .airfield {
+      padding: 20px 100px; }
+      /* line 866, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .medium .col-md-8 p, .extra .col-md-8 p, .airfield .col-md-8 p {
+        font-size: 19px; } }
+
+/* line 872, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.medium_2, .extra_2, .airfield_2, .airfield_3 {
+  background-color: #f0f0f0;
+  box-sizing: border-box; }
+  /* line 875, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .medium_2 .picture, .extra_2 .picture, .airfield_2 .picture, .airfield_3 .picture {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/15.jpg);
+    background-size: cover;
+    background-position: center;
+    height: inherit; }
+  /* line 881, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .medium_2 .text, .extra_2 .text, .airfield_2 .text, .airfield_3 .text {
+    padding: 50px 100px 40px 50px; }
+    /* line 883, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .text p, .extra_2 .text p, .airfield_2 .text p, .airfield_3 .text p {
+      font-size: 17px; }
+    /* line 886, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .text ul > li, .extra_2 .text ul > li, .airfield_2 .text ul > li, .airfield_3 .text ul > li {
+      color: #444; }
+  @media only screen and (max-width: 420px) {
+    /* line 891, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .picture, .extra_2 .picture, .airfield_2 .picture, .airfield_3 .picture {
+      height: 300px; }
+    /* line 894, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .text, .extra_2 .text, .airfield_2 .text, .airfield_3 .text {
+      padding: 50px 30px 40px 30px; }
+    /* line 898, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .col-md-8 p, .extra_2 .col-md-8 p, .airfield_2 .col-md-8 p, .airfield_3 .col-md-8 p {
+      font-size: 15px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 905, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .picture, .extra_2 .picture, .airfield_2 .picture, .airfield_3 .picture {
+      height: 400px; }
+    /* line 908, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .text, .extra_2 .text, .airfield_2 .text, .airfield_3 .text {
+      padding: 50px 30px 40px 50px; }
+    /* line 912, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .col-md-8 p, .extra_2 .col-md-8 p, .airfield_2 .col-md-8 p, .airfield_3 .col-md-8 p {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 919, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .picture, .extra_2 .picture, .airfield_2 .picture, .airfield_3 .picture {
+      height: inherit; }
+    /* line 922, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .text, .extra_2 .text, .airfield_2 .text, .airfield_3 .text {
+      padding: 50px 30px 40px 30px; }
+    /* line 926, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .medium_2 .col-md-8 p, .extra_2 .col-md-8 p, .airfield_2 .col-md-8 p, .airfield_3 .col-md-8 p {
+      font-size: 18px; } }
+
+/* line 937, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.extra_2 .picture {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/2.jpg); }
+
+/* line 946, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.airfield_2 .picture {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aifield.jpeg); }
+
+/* line 950, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+.airfield_3 {
+  background-color: #fefefe; }
+  /* line 954, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .airfield_3 .show .text {
+    padding-left: 180px; }
+  /* line 958, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  .airfield_3 .hide {
+    display: none; }
+  @media only screen and (max-width: 420px) {
+    /* line 962, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .show {
+      display: none; }
+    /* line 965, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .hide {
+      display: block; }
+      /* line 967, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .airfield_3 .hide .text {
+        padding-left: 30px; }
+      /* line 970, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .airfield_3 .hide .picture {
+        height: 300px; }
+    /* line 975, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .col-md-8 p {
+      font-size: 15px; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 982, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .show {
+      display: none; }
+    /* line 985, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .hide {
+      display: block; }
+      /* line 987, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .airfield_3 .hide .text {
+        padding-left: 50px; }
+      /* line 990, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      .airfield_3 .hide .picture {
+        height: 400px; }
+    /* line 995, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .col-md-8 p {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 1003, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .show .text {
+      padding-left: 100px; }
+    /* line 1006, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .show .picture {
+      height: inherit; }
+    /* line 1011, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    .airfield_3 .col-md-8 p {
+      font-size: 20px; } }
+
+/* line 1019, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+footer {
+  padding: 35px 0; }
+  /* line 1021, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+  footer .row {
+    padding: 20px 150px; }
+    /* line 1024, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer .row h2 {
+      font-size: 18px;
+      font-weight: 700; }
+    /* line 1028, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer .row p {
+      color: #000 !important;
+      font-size: 20px;
+      margin-top: 10px; }
+    /* line 1033, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer .row .col-md-6 {
+      padding: 0 0; }
+  @media only screen and (max-width: 420px) {
+    /* line 1019, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer {
+      padding: 20px 0; }
+      /* line 1039, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row {
+        padding: 10px 30px; }
+        /* line 1042, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        footer .row .col-md-6 h2 {
+          font-size: 14px; }
+        /* line 1045, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        footer .row .col-md-6 p {
+          font-size: 14px; }
+        /* line 1049, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        footer .row .bottom {
+          border-top: 1px solid #b0b0b0;
+          padding-top: 12px; }
+          /* line 1052, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+          footer .row .bottom h2 {
+            font-size: 14px;
+            font-weight: 500; } }
+  @media only screen and (min-width: 421px) and (max-width: 767px) {
+    /* line 1062, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer .row {
+      padding: 10px 50px; }
+      /* line 1065, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .col-md-6 h2 {
+        font-size: 17px; }
+      /* line 1068, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .col-md-6 p {
+        font-size: 16px; }
+      /* line 1072, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .bottom {
+        border-top: 1px solid #b0b0b0;
+        padding-top: 12px; }
+        /* line 1075, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+        footer .row .bottom h2 {
+          font-size: 15px;
+          font-weight: 500; } }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* line 1085, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+    footer .row {
+      padding: 10px 100px; }
+      /* line 1088, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .col-md-6 h2 {
+        font-size: 17px; }
+      /* line 1091, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .col-md-6 p {
+        font-size: 16px; }
+      /* line 1095, C:/Users/GRACE/Documents/projects/TaewooLP/style.scss */
+      footer .row .bottom {
+        padding-left: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
